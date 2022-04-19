@@ -1,0 +1,67 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.hibernate.bean.UserLogin" table="UserLogin">
+		<id column="user_id" name="user_id" type="java.lang.Integer">
+			<generator class="increment" />
+		</id>
+		<property column="user_name" name="user_name"
+			type="java.lang.String" />
+		<property column="user_pwd" name="user_pwd" type="string" />
+	</class>
+	<class name="com.hibernate.bean.UserRegister"
+		table="UserRegister">
+		<id column="user_reg__id" name="user_reg_id"
+			type="java.lang.Integer">
+			<generator class="increment" />
+		</id>
+		<property column="user_reg__name" name="user_reg_name"
+			type="java.lang.String" />
+		<property column="reg_pwd" name="reg_pwd" type="string" />
+		<property column="re_reg_pwd" name="re_reg_pwd" type="string" />
+		<property column="mobile" name="mobile" type="string" />
+		<property column="email" name="email" type="string" />
+	</class>
+	<class name="com.hibernate.bean.InsertFlights"
+		table="InsertFlights">
+		<id column="flight_id" name="flight_id" type="java.lang.Integer">
+			<generator class="increment" />
+		</id>
+		<property column="flight_name" name="flight_name"
+			type="java.lang.String" />
+		<property column="flight_number" name="flight_number"
+			type="string" />
+		<property column="Departure" name="Departure" type="string" />
+		<property column="Arrival" name="Arrival" type="string" />
+		<property column="Departure_Time" name="Departure_time"
+			type="string" />
+		<property column="Arrival_time" name="Arrival_time"
+			type="string" />
+	</class>
+	<class name="com.hibernate.bean.BookFlights" table="BookFlights">
+		<id column="flight_id" name="flight_id" type="java.lang.Integer">
+			<generator class="increment" />
+		</id>
+		<property column="flight_name" name="flight_name"
+			type="java.lang.String" />
+		<property column="flight_number" name="flight_number"
+			type="string" />
+		<property column="Departure" name="Departure" type="string" />
+		<property column="Arrival" name="Arrival" type="string" />
+		<property column="Departure_Time" name="Departure_Time"
+			type="string" />
+		<property column="Arrival_time" name="Arrival_Time"
+			type="string" />
+	</class>
+	<class name="com.hibernate.bean.AdminLogin" table="AdminLogin">
+		<id column="admin_id" name="admin_id" type="java.lang.Integer">
+			<generator class="increment" />
+		</id>
+		<property column="admin_name" name="admin_name"
+			type="java.lang.String" />
+		<property column="admin_pwd" name="admin_pwd" type="string" />
+	</class>
+</hibernate-mapping>

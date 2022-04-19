@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+		<display-name>FlyAway</display-name>
+	<servlet>
+		<display-name>AdminLogin</display-name>
+		<servlet-name>adminLoginController</servlet-name>
+		<servlet-class>com.hibernate.controller.adminLoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminLoginController</servlet-name>
+		<url-pattern>/adminLogin</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<display-name>UserLogin</display-name>
+		<servlet-name>userLoginController</servlet-name>
+		<servlet-class>com.hibernate.controller.userLoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userLoginController</servlet-name>
+		<url-pattern>/userLogin</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<display-name>UserReg</display-name>
+		<servlet-name>userRegisterController</servlet-name>
+		<servlet-class>com.hibernate.controller.userRegisterController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userRegisterController</servlet-name>
+		<url-pattern>/userReg</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<display-name>BookFlights</display-name>
+		<servlet-name>bookFlightController</servlet-name>
+		<servlet-class>com.hibernate.controller.bookFlightController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>bookFlightController</servlet-name>
+		<url-pattern>/bookFlight</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<display-name>InsertFlight</display-name>
+		<servlet-name>insertFlightController</servlet-name>
+		<servlet-class>com.hibernate.controller.insertFlightController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>insertFlightController</servlet-name>
+		<url-pattern>/insertFlight</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>Home.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
